@@ -52,7 +52,7 @@
     "id": 8,
     "name": "Polka Dot Ducks",
     "image": "images/Polka Dot Ducks - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Ducks with polka dot pattern. Sold out piece."
   },
   {
@@ -66,14 +66,14 @@
     "id": 10,
     "name": "Black Bowl",
     "image": "images/Black Bowl - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Black ceramic bowl. Sold out piece."
   },
   {
     "id": 11,
     "name": "Cat Mugs",
     "image": "images/Cat Mugs - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Mugs with cat theme. Sold out piece."
   },
   {
@@ -87,35 +87,35 @@
     "id": 13,
     "name": "Early Spring Mugs Collection",
     "image": "images/Early Spring Mugs Collection - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Spring mugs collection. Sold out piece."
   },
   {
     "id": 14,
     "name": "Blue Flowers Mug",
     "image": "images/Blue Flowers Mug - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Mug with blue flowers. Sold out piece."
   },
   {
     "id": 15,
     "name": "Pink and Purple Mug",
     "image": "images/Pink and Purple Mug - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Mug in pink and purple. Sold out piece."
   },
   {
     "id": 16,
     "name": "Garden Mug",
     "image": "images/Garden Mug - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Mug with garden theme. Sold out piece."
   },
   {
     "id": 17,
     "name": "Spring Mug",
     "image": "images/Spring Mug - Sold.jpg",
-    "status": "sold",
+    "status": "available",
     "description": "Spring themed mug. Sold out piece."
   },
   {
