@@ -1,0 +1,128 @@
+{
+  "en": {
+    "nav": {
+      "gallery": "Gallery",
+      "about": "About",
+      "contact": "Contact",
+      "instagram": "Instagram"
+    },
+    "hero": {
+      "subtitle": "Handcrafted Ceramics",
+      "title": "Organic Forms",
+      "description": "I work with stoneware clay, creating hand-built forms that explore touch, function, and material. Organic shapes and natural asymmetry guide my process.",
+      "cta": "Explore Collection"
+    },
+    "gallery": {
+      "label": "Portfolio",
+      "title": "Available Works",
+      "note": "All pieces are hand-created. Some may be unavailable.",
+      "contact_link": "Contact me",
+      "for_custom": "for custom orders."
+    },
+    "about": {
+      "title": "Meet Iná Nakao",
+      "subtitle": "CERAMIC ARTIST, GUIDED BY COLOR AND INTUITION",
+      "bio1": "Growing up between Brazilian and Japanese cultures taught me to see the world through color, pattern, and rhythm. Nature became my first teacher — organic forms, natural systems, and the quiet beauty of imperfection.",
+      "bio2": "What began as creative exploration became a life path. I work with stoneware clay, creating hand-built forms that invite you to touch, hold, and connect. Each piece is guided by intuition — organic shapes, natural asymmetry, earth tones that feel both ancient and contemporary.",
+      "bio3": "My practice is about more than clay. It's about beauty as expression, color as emotion, and the courage to create what feels true. Based in Louisville, Kentucky, I create ceramics that evoke memories and create quiet, sensory moments with those who hold them."
+    },
+    "contact": {
+      "title": "Inquiries & Commissions",
+      "subtitle": "Interested in a specific piece or a custom ceramic project? Get in touch.",
+      "email_label": "Email",
+      "phone_label": "Phone",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send"
+      },
+      "interested": "Interested in this piece?",
+      "contact_us": "Contact us for more information, availability, or custom orders.",
+      "send_email": "Send Email",
+      "call": "Call"
+    },
+    "social": {
+      "title": "Follow",
+      "subtitle": "Daily updates and new collections",
+      "instagram_btn": "Instagram"
+    },
+    "footer": "© 2025 Atelier Iná Nakao. All rights reserved.",
+    "product": {
+      "available": "Available",
+      "sold": "Sold Out",
+      "interested_btn": "Interested in this work?"
+    },
+    "modal": {
+      "interested": "Interested in this piece?",
+      "contact_info": "Contact us for more information, availability, or custom orders.",
+      "inquiry_title": "Inquiry About",
+      "email_btn": "Send via Email",
+      "sms_btn": "Send via SMS",
+      "message_prefix": "Hello, I am interested in learning more about the work:"
+    }
+  },
+  "pt": {
+    "nav": {
+      "gallery": "Galeria",
+      "about": "Sobre",
+      "contact": "Contato",
+      "instagram": "Instagram"
+    },
+    "hero": {
+      "subtitle": "Cerâmicas Artesanais",
+      "title": "Formas Orgânicas",
+      "description": "Trabalho com argila de grés, criando formas feitas à mão que exploram toque, função e material. Formas orgânicas e assimetria natural guiam meu processo.",
+      "cta": "Explorar Coleção"
+    },
+    "gallery": {
+      "label": "Portfólio",
+      "title": "Obras Disponíveis",
+      "note": "Todas as peças são criadas à mão. Algumas podem estar indisponíveis.",
+      "contact_link": "Entre em contato",
+      "for_custom": "para encomendas personalizadas."
+    },
+    "about": {
+      "title": "Conheça Iná Nakao",
+      "subtitle": "ARTISTA DE CERÂMICA, GUIADA POR COR E INTUIÇÃO",
+      "bio1": "Crescer entre culturas brasileira e japonesa me ensinou a ver o mundo através de cor, padrão e ritmo. A natureza se tornou minha primeira mestra — formas orgânicas, sistemas naturais e a beleza silenciosa da imperfeição.",
+      "bio2": "O que começou como exploração criativa se tornou um caminho de vida. Trabalho com argila de grés, criando formas feitas à mão que convidam você a tocar, segurar e conectar. Cada peça é guiada pela intuição — formas orgânicas, assimetria natural, tons terrosos que se sentem simultaneamente antigos e contemporâneos.",
+      "bio3": "Minha prática é sobre mais do que argila. É sobre beleza como expressão, cor como emoção, e a coragem de criar o que se sente verdadeiro. Baseada em Louisville, Kentucky, crio cerâmicas que evocam memórias e criam momentos sensoriais silenciosos com quem as segura."
+    },
+    "contact": {
+      "title": "Inquéritos e Encomendas",
+      "subtitle": "Interessado em uma peça específica ou em um projeto de cerâmica personalizado? Entre em contato.",
+      "email_label": "Email",
+      "phone_label": "Telefone",
+      "form": {
+        "name": "Nome",
+        "email": "Email",
+        "message": "Mensagem",
+        "submit": "Enviar"
+      },
+      "interested": "Interessado nesta peça?",
+      "contact_us": "Entre em contato para mais informações, disponibilidade ou encomendas personalizadas.",
+      "send_email": "Enviar Email",
+      "call": "Ligar"
+    },
+    "social": {
+      "title": "Acompanhe",
+      "subtitle": "Atualizações diárias e novas coleções",
+      "instagram_btn": "Instagram"
+    },
+    "footer": "© 2025 Atelier Iná Nakao. Todos os direitos reservados.",
+    "product": {
+      "available": "Disponível",
+      "sold": "Vendido",
+      "interested_btn": "Interessado nesta obra?"
+    },
+    "modal": {
+      "interested": "Interessado nesta peça?",
+      "contact_info": "Entre em contato para mais informações, disponibilidade ou encomendas personalizadas.",
+      "inquiry_title": "Consulta Sobre",
+      "email_btn": "Enviar por Email",
+      "sms_btn": "Enviar por SMS",
+      "message_prefix": "Olá, estou interessado em saber mais sobre a obra:"
+    }
+  }
+}

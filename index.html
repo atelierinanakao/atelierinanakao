@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atelier Iná Nakao - Handcrafted ceramics. Organic forms inspired by Brazilian and Japanese cultures.">
+    <meta name="theme-color" content="#556B2F">
+    <title>Atelier Iná Nakao | Handcrafted Ceramics</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Lora:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Design System - Minimalismo Japônico */
+        :root {
+            --olive-green: #556B2F;
+            --moss-green: #8A9A5B;
+            --rust: #B7410E;
+            --earth-tone: #D2B48C;
+            --off-white: #F9F7F2;
+            --text-dark: #2C2C2C;
+            --text-muted: #5C5C5C;
+        }
+
+        * {
+            font-family: 'Lora', serif;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        body, p, a, button, input, textarea {
+            font-family: 'Lora', serif;
+        }
+
+        .btn-primary, .btn-outline, .product-btn, .modal-btn, .nav-menu a, .logo {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--off-white);
+            color: var(--text-dark);
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+
+        /* Hover Effects */
+        .product-card {
+            transition: all 0.3s ease-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .product-card img {
+            transition: transform 0.4s ease-out;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background-color: var(--rust);
+            color: white;
+            padding: 1rem 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease-out;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.85;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(183, 65, 14, 0.2);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--rust);
+            color: var(--rust);
+            padding: 0.875rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease-out;
+            background: transparent;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--rust);
+            color: white;
+        }
+
+        /* Language Selector */
+        .language-selector {
+            display: flex;
+            gap: 0;
+            background: none;
+            border: none;
+            box-shadow: none;
+            list-style: none;
+            margin-left: auto;
+            padding-left: 1rem;
+            border-left: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .language-selector button {
+            padding: 0.25rem 0.75rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+            color: var(--text-dark);
+        }
+
+        .language-selector button.active {
+            color: var(--rust);
+        }
+
+        .language-selector button:hover {
+            color: var(--rust);
+        }
+
+        /* Navigation */
+        .navbar {
+            background: white;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--olive-green);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--rust);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--text-dark);
+            transition: all 0.3s;
+        }
+
+        /* Mobile Menu */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background: white;
+                padding: 1rem;
+                gap: 1rem;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .language-selector {
+                margin-left: 0;
+                border-left: none;
+                border-top: 1px solid rgba(0,0,0,0.1);
+                padding-left: 0;
+                padding-top: 1rem;
+                margin-top: 1rem;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(249, 247, 242, 0.98) 0%, rgba(249, 247, 242, 0.95) 100%);
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(85, 107, 47, 0.1);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(138, 154, 91, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(183, 65, 14, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--rust);
+            margin-bottom: 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--olive-green);
+            line-height: 1.1;
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .hero-description {
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+            color: var(--text-muted);
+            line-height: 1.9;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+        }
+
+        /* Banner Section - Full Width */
+        .banner-section {
+            padding: 0;
+            background: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        .banner-container {
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: none;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .product-card {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            background: #f0f0f0;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.4s ease-out;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            transform: translateY(-8px);
+        }
+
+        .product-card-image {
+            flex: 1;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease-out;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .product-card-info {
+            padding: 1.75rem 1.5rem;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            border-top: 2px solid rgba(85, 107, 47, 0.1);
+        }
+
+        .product-name {
+            font-size: 1.15rem;
+            margin: 0;
+            font-weight: 600;
+            color: var(--olive-green);
+            font-family: 'Playfair Display', serif;
+            line-height: 1.3;
+        }
+
+        .product-status {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .product-status.available {
+            color: var(--moss-green);
+        }
+
+        .product-status.sold {
+            color: #d32f2f;
+        }
+
+        .product-btn {
+            padding: 0.85rem 1.2rem;
+            background: var(--rust);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease-out;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 0.3rem;
+        }
+
+        .product-btn:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(183, 65, 14, 0.25);
+        }
+
+        .product-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--rust);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header h2 {
+            font-size: 3.2rem;
+            color: var(--olive-green);
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f0f0f0;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content h2 {
+            font-size: 2.8rem;
+            color: var(--olive-green);
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .about-subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--rust);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-family: 'Lora', serif;
+            font-size: 1.05rem;
+        }
+
+        /* Contact Section */
+        .section-contact {
+            background: var(--olive-green);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .contact-content > p {
+            text-align: center;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .contact-item h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: opacity 0.3s;
+        }
+
+        .contact-item a:hover {
+            opacity: 0.8;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 4px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-family: inherit;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: white;
+            background: rgba(255,255,255,0.15);
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 0.875rem;
+            background-color: var(--rust);
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .form-group button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        /* Social Section */
+        .section-social {
+            padding: 4rem 0;
+            text-align: center;
+            background: white;
+        }
+
+        .section-social h2 {
+            font-size: 2.5rem;
+            color: var(--olive-green);
+            margin-bottom: 0.5rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .section-social p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            animation: fadeIn 0.3s;
+            overflow-y: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 0;
+            border-radius: 0;
+            max-width: 700px;
+            width: 95%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            animation: fadeInUp 0.4s;
+            margin: 2rem auto;
+        }
+
+        .modal-image {
+            width: 100%;
+            aspect-ratio: 4/5;
+            object-fit: cover;
+            display: block;
+        }
+
+        .modal-body {
+            padding: 2.5rem;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+
+        .modal-title {
+            flex: 1;
+        }
+
+        .modal-title h2 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: var(--olive-green);
+            line-height: 1.2;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .modal-status {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .modal-status.available {
+            background: rgba(138, 154, 91, 0.1);
+            color: var(--moss-green);
+        }
+
+        .modal-status.sold {
+            background: rgba(255, 107, 107, 0.1);
+            color: #ff6b6b;
+        }
+
+        .modal-description {
+            color: var(--text-muted);
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            font-family: 'Lora', serif;
+        }
+
+        .modal-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--moss-green), transparent);
+            margin: 2rem 0;
+        }
+
+        .modal-contact-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: var(--rust);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .modal-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .modal-btn {
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .modal-btn-primary {
+            background: var(--rust);
+            color: white;
+        }
+
+        .modal-btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .modal-btn-secondary {
+            background: transparent;
+            border: 1px solid var(--rust);
+            color: var(--rust);
+        }
+
+        .modal-btn-secondary:hover {
+            background: var(--rust);
+            color: white;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-dark);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .modal-close:hover {
+            color: var(--rust);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .banner-container {
+                width: 100%;
+                border-radius: 0;
+            }
+
+            .banner-section {
+                padding: 0;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .modal-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-body {
+                padding: 1.5rem;
+            }
+
+            .modal-title h2 {
+                font-size: 1.5rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .hero {
+                padding: 4rem 0;
+            }
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Gallery Note */
+        .gallery-note {
+            text-align: center;
+            color: var(--text-muted);
+            font-style: italic;
+            padding: 2rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .gallery-note a {
+            color: var(--rust);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .gallery-note a:hover {
+            color: var(--olive-green);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#" class="logo">Atelier Iná Nakao</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#galeria" data-i18n="nav.gallery">Gallery</a></li>
+                    <li><a href="#sobre" data-i18n="nav.about">About</a></li>
+                    <li><a href="#contato" data-i18n="nav.contact">Contact</a></li>
+                    <li><a href="https://instagram.com/inanakao" target="_blank" rel="noopener noreferrer" data-i18n="nav.instagram">Instagram</a></li>
+                    <li class="language-selector">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="pt">PT</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section - Full Width -->
+    <section class="banner-section">
+        <div class="banner-container">
+            <img src="images/hero-banner.png" alt="Atelier Iná Nakao Ceramics Collection" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Handcrafted Ceramics</p>
+                <h1 class="hero-title" data-i18n="hero.title">Organic Forms</h1>
+                <p class="hero-description" data-i18n="hero.description">I work with stoneware clay, creating hand-built forms that explore touch, function, and material. Organic shapes and natural asymmetry guide my process.</p>
+                <a href="#galeria" class="btn-primary" data-i18n="hero.cta">Explore Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label" data-i18n="gallery.label">Portfolio</p>
+                <h2 data-i18n="gallery.title">Available Works</h2>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Produtos carregados via JavaScript com novo design -->
+            </div>
+
+            <div class="gallery-note">
+                <p>
+                    <span data-i18n="gallery.note">All pieces are hand-created. Some may be unavailable.</span>
+                    <a href="#contato" data-i18n="gallery.contact_link">Contact me</a>
+                    <span data-i18n="gallery.for_custom">for custom orders.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section" style="background: white;">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/artist-portrait.jpg" alt="Iná Nakao" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <h2 data-i18n="about.title">Meet Iná Nakao</h2>
+                    <p class="about-subtitle" data-i18n="about.subtitle">CERAMIC ARTIST, GUIDED BY COLOR AND INTUITION</p>
+                    
+                    <p data-i18n="about.bio1">Growing up between Brazilian and Japanese cultures taught me to see the world through color, pattern, and rhythm. Nature became my first teacher — organic forms, natural systems, and the quiet beauty of imperfection.</p>
+                    
+                    <p data-i18n="about.bio2">What began as creative exploration became a life path. I work with stoneware clay, creating hand-built forms that invite you to touch, hold, and connect. Each piece is guided by intuition — organic shapes, natural asymmetry, earth tones that feel both ancient and contemporary.</p>
+                    
+                    <p data-i18n="about.bio3">My practice is about more than clay. It's about beauty as expression, color as emotion, and the courage to create what feels true. Based in Louisville, Kentucky, I create ceramics that evoke memories and create quiet, sensory moments with those who hold them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="section-contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 data-i18n="contact.title">Inquiries & Commissions</h2>
+                <p data-i18n="contact.subtitle">Interested in a specific piece or a custom ceramic project? Get in touch.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3 data-i18n="contact.email_label">Email</h3>
+                        <a href="mailto:inasnakao@hotmail.com">inasnakao@hotmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3 data-i18n="contact.phone_label">Phone</h3>
+                        <a href="tel:+15023225761">(502) 322-5761</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.form.name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.form.email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.form.message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" data-i18n="contact.form.submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section id="redes" class="section-social">
+        <div class="container">
+            <h2 data-i18n="social.title">Follow</h2>
+            <p data-i18n="social.subtitle">Daily updates and new collections</p>
+            <a href="https://instagram.com/inanakao" target="_blank" rel="noopener noreferrer" class="btn-outline" data-i18n="social.instagram_btn">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer">© 2025 Atelier Iná Nakao. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+                Created by <a href="https://instagram.com/id10connectstudio" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; opacity: 0.9;">ID10Connect Studio</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body">
+                <div id="modalBody">
+                    <!-- Conteúdo do produto será carregado aqui -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

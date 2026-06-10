@@ -1,0 +1,289 @@
+[
+  {
+    "id": 1,
+    "name": "Sage Leaf Plate",
+    "image": "images/Sage Leaf Plate.jpg",
+    "status": "available",
+    "description": "A delicate plate featuring sage leaf patterns. Functional and decorative ceramic piece."
+  },
+  {
+    "id": 2,
+    "name": "Zucchini Leaf Plate",
+    "image": "images/Zucchini Leaf Plate.jpg",
+    "status": "available",
+    "description": "Plate with zucchini leaf pattern. Organic forms inspired by nature."
+  },
+  {
+    "id": 3,
+    "name": "Portrait Piece",
+    "image": "images/PXL_20250511_155413557.PORTRAIT.jpg",
+    "status": "available",
+    "description": "Sculptural ceramic piece in earth tones. Exploration of form and asymmetry."
+  },
+  {
+    "id": 4,
+    "name": "Orange Plate",
+    "image": "images/Orange Plate.jpg",
+    "status": "available",
+    "description": "Plate in orange and rust tones. Inspired by natural forms."
+  },
+  {
+    "id": 5,
+    "name": "Yellow Lines Serving Plate",
+    "image": "images/Yellow Lines, serving plate.jpg",
+    "status": "available",
+    "description": "Serving plate with yellow line details. Minimalist and functional design."
+  },
+  {
+    "id": 6,
+    "name": "Afternoon Birds Wall Decor",
+    "image": "images/Afternoon Birds, wall decor.jpg",
+    "status": "available",
+    "description": "Wall decoration with bird theme. Unique sculptural piece."
+  },
+  {
+    "id": 7,
+    "name": "Red Serving Plate",
+    "image": "images/Red Serving Plate.jpg",
+    "status": "available",
+    "description": "Serving plate in red and earth tones. Organic and asymmetrical form."
+  },
+  {
+    "id": 8,
+    "name": "Polka Dot Ducks",
+    "image": "images/Polka Dot Ducks - Sold.jpg",
+    "status": "sold",
+    "description": "Ducks with polka dot pattern. Sold out piece."
+  },
+  {
+    "id": 9,
+    "name": "Fall Plate",
+    "image": "images/Fall Plate.jpg",
+    "status": "available",
+    "description": "Plate inspired by autumn colors. Rust and green tones."
+  },
+  {
+    "id": 10,
+    "name": "Black Bowl",
+    "image": "images/Black Bowl - Sold.jpg",
+    "status": "sold",
+    "description": "Black ceramic bowl. Sold out piece."
+  },
+  {
+    "id": 11,
+    "name": "Cat Mugs",
+    "image": "images/Cat Mugs - Sold.jpg",
+    "status": "sold",
+    "description": "Mugs with cat theme. Sold out piece."
+  },
+  {
+    "id": 12,
+    "name": "Giant Magnolia Leaf",
+    "image": "images/Giant Magnolia Leaf.jpg",
+    "status": "available",
+    "description": "Giant magnolia leaf form. Exploration of scale and organic shape."
+  },
+  {
+    "id": 13,
+    "name": "Early Spring Mugs Collection",
+    "image": "images/Early Spring Mugs Collection - Sold.jpg",
+    "status": "sold",
+    "description": "Spring mugs collection. Sold out piece."
+  },
+  {
+    "id": 14,
+    "name": "Blue Flowers Mug",
+    "image": "images/Blue Flowers Mug - Sold.jpg",
+    "status": "sold",
+    "description": "Mug with blue flowers. Sold out piece."
+  },
+  {
+    "id": 15,
+    "name": "Pink and Purple Mug",
+    "image": "images/Pink and Purple Mug - Sold.jpg",
+    "status": "sold",
+    "description": "Mug in pink and purple. Sold out piece."
+  },
+  {
+    "id": 16,
+    "name": "Garden Mug",
+    "image": "images/Garden Mug - Sold.jpg",
+    "status": "sold",
+    "description": "Mug with garden theme. Sold out piece."
+  },
+  {
+    "id": 17,
+    "name": "Spring Mug",
+    "image": "images/Spring Mug - Sold.jpg",
+    "status": "sold",
+    "description": "Spring themed mug. Sold out piece."
+  },
+  {
+    "id": 18,
+    "name": "Sage Mug",
+    "image": "images/Sage Mug.jpg",
+    "status": "available",
+    "description": "Mug in sage tones. Organic forms and functional design."
+  },
+  {
+    "id": 19,
+    "name": "Ancestral Roots",
+    "image": "images/Ancestral Roots.jpg",
+    "status": "available",
+    "description": "Sculptural piece exploring roots and ancestrality. Complex organic form."
+  },
+  {
+    "id": 20,
+    "name": "Pomifera Bowls",
+    "image": "images/Pomifera Bowls.jpg",
+    "status": "available",
+    "description": "Set of bowls with fruit theme. Functional and decorative pieces."
+  },
+  {
+    "id": 21,
+    "name": "Mask 1",
+    "image": "images/Mask 1.jpg",
+    "status": "available",
+    "description": "Sculptural mask. Exploration of form and expression."
+  },
+  {
+    "id": 22,
+    "name": "Vessel-Carnival",
+    "image": "images/Vessel-Carnival.jpg",
+    "status": "available",
+    "description": "Vessel with carnival inspiration. Vibrant colors and dynamic forms."
+  },
+  {
+    "id": 23,
+    "name": "Tree of Life 10",
+    "image": "images/Tree of Life 10.jpg",
+    "status": "available",
+    "description": "Tree of Life - piece 10. Exploration of structure and growth."
+  },
+  {
+    "id": 24,
+    "name": "Magnolia Mugs",
+    "image": "images/magnolia mugs.jpg",
+    "status": "available",
+    "description": "Mugs with magnolia theme. Elegant and functional forms."
+  },
+  {
+    "id": 25,
+    "name": "Pink Flowers Mug",
+    "image": "images/pink flowers mug.jpg",
+    "status": "available",
+    "description": "Mug with pink flowers. Delicate details and soft colors."
+  },
+  {
+    "id": 26,
+    "name": "Pink Cup",
+    "image": "images/pink cup.jpg",
+    "status": "available",
+    "description": "Cup in pink. Minimalist and functional form."
+  },
+  {
+    "id": 27,
+    "name": "Begonia Dishes",
+    "image": "images/Z-begonia dishes.jpg",
+    "status": "available",
+    "description": "Dishes with begonia theme. Natural patterns and earth tones."
+  },
+  {
+    "id": 28,
+    "name": "Sage Mug",
+    "image": "images/Z-Sage Mug.jpg",
+    "status": "available",
+    "description": "Mug in sage tones. Natural colors and organic forms."
+  },
+  {
+    "id": 29,
+    "name": "Portrait MP",
+    "image": "images/z-PXL_20251127_173843077.MP.jpg",
+    "status": "available",
+    "description": "Sculptural ceramic piece in earth tones. Exploration of form and light."
+  },
+  {
+    "id": 30,
+    "name": "Portrait Original Edit",
+    "image": "images/z-PXL_20251127_173720355.PORTRAIT.ORIGINAL-EDIT.jpg",
+    "status": "available",
+    "description": "Original sculptural piece. Complex forms and intentional asymmetry."
+  },
+  {
+    "id": 31,
+    "name": "Composition 1",
+    "image": "images/z-PXL_20250511_190354767.jpg",
+    "status": "available",
+    "description": "Ceramic composition. Exploration of scale and proportion."
+  },
+  {
+    "id": 32,
+    "name": "Ceramic Detail",
+    "image": "images/PXL_20250511_155344043.jpg",
+    "status": "available",
+    "description": "Close-up detail of ceramic. Texture and form exploration."
+  },
+  {
+    "id": 33,
+    "name": "Composition 2",
+    "image": "images/PXL_20250511_190335915.jpg",
+    "status": "available",
+    "description": "Second ceramic composition. Harmony of forms and colors."
+  },
+  {
+    "id": 34,
+    "name": "Vertical Portrait 1",
+    "image": "images/PXL_20250526_125033308.PORTRAIT.jpg",
+    "status": "available",
+    "description": "Vertical portrait of ceramic piece. Elegant forms."
+  },
+  {
+    "id": 35,
+    "name": "Vertical Portrait 2",
+    "image": "images/PXL_20250526_124735967.PORTRAIT.jpg",
+    "status": "available",
+    "description": "Second vertical portrait. Form and proportion exploration."
+  },
+  {
+    "id": 36,
+    "name": "Jug Cups",
+    "image": "images/1-jug cups.jpg",
+    "status": "available",
+    "description": "Set of jug-style cups. Functional and elegant forms."
+  },
+  {
+    "id": 37,
+    "name": "Studio Composition 1",
+    "image": "images/PXL_20250518_165515198.jpg",
+    "status": "available",
+    "description": "Studio composition. Arrangement of ceramic pieces."
+  },
+  {
+    "id": 38,
+    "name": "Studio Composition 2",
+    "image": "images/PXL_20250416_221936244.jpg",
+    "status": "available",
+    "description": "Second studio composition. Harmony of forms and colors."
+  },
+  {
+    "id": 39,
+    "name": "Texture Detail",
+    "image": "images/PXL_20250511_185725261.jpg",
+    "status": "available",
+    "description": "Ceramic texture detail. Surface exploration."
+  },
+  {
+    "id": 40,
+    "name": "Night Composition",
+    "image": "images/PXL_20250121_233147264~2.jpg",
+    "status": "available",
+    "description": "Night composition. Play of light and shadow in ceramics."
+  },
+  {
+    "id": 41,
+    "name": "Blue Vessels",
+    "image": "images/Blue Vessels.jpg",
+    "status": "available",
+    "description": "Set of blue vessels. Sculptural and functional forms."
+  }
+]
